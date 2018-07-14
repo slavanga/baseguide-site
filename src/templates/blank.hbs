@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="{{htmlclass}}">
+  <head>
+    {{#block "head"}}
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="{{data "project.description"}}">
+      {{#if title}}
+        <title>{{title}} - {{data "project.title"}}</title>
+      {{else if name}}
+        <title>{{name}} - {{data "project.title"}}</title>
+      {{else}}
+        <title>{{data "project.title"}}</title>
+      {{/if}}
+    {{/block}}
+  </head>
+  <body class="{{bodyclass}}">
+    {{#block "body"}}
+      {{#block "main"}}
+
+      {{/block}}
+    {{/block}}
+    {{#block "foot"}}
+
+    {{/block}}
+  </body>
+</html>

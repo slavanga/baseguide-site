@@ -1,0 +1,9 @@
+---
+name: Multiple Select
+---
+<label for="example-multi-select">Articles</label>
+<select id="example-select" multiple size="3">
+{{#each (data "articles")}}
+  <option>{{title}}</option>
+{{/each}}
+</select>

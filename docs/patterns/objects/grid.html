@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="drizzle-Layout">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Baseguide is a lightweight and robust CSS framework for prototyping and production code.">
+        <title>Grid - Baseguide</title>
+    <link rel="stylesheet" href="https://unpkg.com/baseguide@latest/dist/css/baseguide.min.css">
+    <link rel="stylesheet" href="/assets/drizzle/styles/drizzle.css">
+    <link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
+
+    <script>
+      WebFontConfig = {
+        google: {
+          families: ['Merriweather:900:latin']
+        }
+      };
+
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+  </head>
+  <body class="drizzle-Layout-body">
+    <div class="drizzle-Layout-nav drizzle-Nav" id="nav">
+      <div class="drizzle-Nav-header">
+        <a href="/" class="logo font-family-brand">
+          Baseguide
+        </a>
+        <a class="drizzle-Nav-header-toggle" href="#nav">
+          <svg height='40' width='30' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30">
+            <path fill="#fff" d="M1,2C0.447,2,0,1.553,0,1l0,0c0-0.552,0.447-1,1-1l0,0h38.002C39.553,0,40,0.448,40,1l0,0c0,0.553-0.447,1-0.998,1l0,0H1L1,2z"></path>
+            <path fill="#fff" d="M1,16c-0.553,0-1-0.448-1-1l0,0c0-0.552,0.447-1,1-1l0,0h38.002C39.553,14,40,14.447,40,15l0,0c0,0.553-0.447,1-0.998,1l0,0H1L1,16z"></path>
+            <path fill="#fff" d="M1,30c-0.553,0-1-0.448-1-1.001l0,0c0-0.552,0.447-1,1-1l0,0h38.002c0.551,0,0.998,0.448,0.998,1l0,0C40,29.552,39.553,30,39.002,30l0,0H1L1,30z"></path>
+          </svg>
+        </a>
+      </div>
+    
+      <div class="drizzle-Nav-main" id="nav-menu">
+        <h5 class="drizzle-Nav-item drizzle-Nav-label">Base</h5>
+        <ul class="drizzle-Nav-menu">
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/base/content.html">Content</a>
+          </li>
+        </ul>
+    
+        <h5 class="drizzle-Nav-item drizzle-Nav-label">Objects</h5>
+        <ul class="drizzle-Nav-menu">
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/objects/embed.html">Embed</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/objects/grid.html">Grid</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/objects/list.html">List</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/objects/media.html">Media</a>
+          </li>
+        </ul>
+    
+        <h5 class="drizzle-Nav-item drizzle-Nav-label">Components</h5>
+        <ul class="drizzle-Nav-menu">
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/components/button.html">Button</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/components/form.html">Form</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/components/table.html">Table</a>
+          </li>
+        </ul>
+    
+        <h5 class="drizzle-Nav-item drizzle-Nav-label">Utilities</h5>
+        <ul class="drizzle-Nav-menu">
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/utilities/helpers.html">Helpers</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/utilities/visibility.html">Visibility</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/utilities/space.html">Space</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/utilities/text.html">Text</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="drizzle-Layout-main drizzle-u-cf">
+      <div class="drizzle-u-pad drizzle-u-rhythm">
+    <h1>Grid</h1>
+      <div class="drizzle-Item drizzle-u-rhythm">
+  <div>
+<h2 id="basic" class="
+  drizzle-Heading
+  drizzle-u-inlineBlock
+  drizzle-u-alignMiddle
+  drizzle-u-padRight">
+    <a href="#basic" class="drizzle-u-linkHidden">      Basic
+</a>
+</h2>
+  </div>
+    <div class="drizzle-Item-notes drizzle-u-rhythm">
+      <p>All columns need <code>.col</code> as base class. Their width can be set using modifier classes (e.g. <code>.col-xs-6</code>).</p>
+
+    </div>
+    <div class="drizzle-u-border">
+      <div class="drizzle-u-pad drizzle-u-cf drizzle-u-posRelative preview ">
+        <div class="container">
+  <div class="row">
+    <div class="col col-xs-6">Column A</div>
+    <div class="col col-xs-6">Column B</div>
+  </div>
+</div>
+
+      </div>
+        <pre class="drizzle-u-pad"><code class="language-markup">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col col-xs-6&quot;&gt;Column A&lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col-xs-6&quot;&gt;Column B&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+      <div class="drizzle-Item drizzle-u-rhythm">
+  <div>
+<h2 id="responsive" class="
+  drizzle-Heading
+  drizzle-u-inlineBlock
+  drizzle-u-alignMiddle
+  drizzle-u-padRight">
+    <a href="#responsive" class="drizzle-u-linkHidden">      Responsive
+</a>
+</h2>
+  </div>
+    <div class="drizzle-u-border">
+      <div class="drizzle-u-pad drizzle-u-cf drizzle-u-posRelative preview ">
+        <div class="container">
+  <div class="row">
+    <div class="col col-md-6 col-xl-9">Column A</div>
+    <div class="col col-md-6 col-xl-3">Column B</div>
+  </div>
+</div>
+
+      </div>
+        <pre class="drizzle-u-pad"><code class="language-markup">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col col-md-6 col-xl-9&quot;&gt;Column A&lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col-md-6 col-xl-3&quot;&gt;Column B&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+      <div class="drizzle-Item drizzle-u-rhythm">
+  <div>
+<h2 id="offset" class="
+  drizzle-Heading
+  drizzle-u-inlineBlock
+  drizzle-u-alignMiddle
+  drizzle-u-padRight">
+    <a href="#offset" class="drizzle-u-linkHidden">      Offset
+</a>
+</h2>
+  </div>
+    <div class="drizzle-u-border">
+      <div class="drizzle-u-pad drizzle-u-cf drizzle-u-posRelative preview ">
+        <div class="container">
+  <div class="row">
+    <div class="col col-xs-5">
+      Column A
+    </div>
+    <div class="col col-xs-5 col-xs-offset-2">
+      Column B
+    </div>
+  </div>
+</div>
+
+      </div>
+        <pre class="drizzle-u-pad"><code class="language-markup">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col col-xs-5&quot;&gt;
+      Column A
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col-xs-5 col-xs-offset-2&quot;&gt;
+      Column B
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+      <div class="drizzle-Item drizzle-u-rhythm">
+  <div>
+<h2 id="push-pull" class="
+  drizzle-Heading
+  drizzle-u-inlineBlock
+  drizzle-u-alignMiddle
+  drizzle-u-padRight">
+    <a href="#push-pull" class="drizzle-u-linkHidden">      Push / Pull
+</a>
+</h2>
+  </div>
+    <div class="drizzle-u-border">
+      <div class="drizzle-u-pad drizzle-u-cf drizzle-u-posRelative preview ">
+        <div class="container">
+  <div class="row">
+    <div class="col col-xs-6 col-xs-push-6">
+      First column in markup
+    </div>
+    <div class="col col-xs-6 col-xs-pull-6">
+      Second column in markup
+    </div>
+  </div>
+</div>
+
+      </div>
+        <pre class="drizzle-u-pad"><code class="language-markup">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col col-xs-6 col-xs-push-6&quot;&gt;
+      First column in markup
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col-xs-6 col-xs-pull-6&quot;&gt;
+      Second column in markup
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+      <div class="drizzle-Item drizzle-u-rhythm">
+  <div>
+<h2 id="nested" class="
+  drizzle-Heading
+  drizzle-u-inlineBlock
+  drizzle-u-alignMiddle
+  drizzle-u-padRight">
+    <a href="#nested" class="drizzle-u-linkHidden">      Nested
+</a>
+</h2>
+  </div>
+    <div class="drizzle-u-border">
+      <div class="drizzle-u-pad drizzle-u-cf drizzle-u-posRelative preview ">
+        <div class="container">
+  <div class="row">
+    <div class="col col-md-8">
+      <div class="row">
+        <div class="col col-md-6">
+          Nested column A
+        </div>
+        <div class="col col-md-6">
+          Nested column B
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+        <pre class="drizzle-u-pad"><code class="language-markup">&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col col-md-8&quot;&gt;
+      &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col col-md-6&quot;&gt;
+          Nested column A
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col col-md-6&quot;&gt;
+          Nested column B
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+
+        <footer class="footer">
+          <ul class="list-unstyled list-wrap text-center">
+              <li><a class="github-button" href="https://github.com/slavanga/baseguide/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" aria-label="Download slavanga/baseguide on GitHub">Download</a></li>
+              <li><a class="github-button" href="https://github.com/slavanga/baseguide/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue slavanga/baseguide on GitHub">Report a Bug</a></li>
+              <li><a class="github-button" href="https://github.com/slavanga/baseguide" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star slavanga/baseguide on GitHub">Star</a></li>
+          </ul>
+          <p class="small text-center text-muted">
+            Licensed under the <a href="https://github.com/slavanga/baseguide/blob/master/LICENSE">MIT License</a>.
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="/assets/drizzle/scripts/drizzle.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8765653-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8765653-5', {
+        'anonymize_ip': true
+      });
+    </script>
+
+  </body>
+</html>

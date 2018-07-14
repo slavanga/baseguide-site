@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="drizzle-Layout">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Baseguide is a lightweight and robust CSS framework for prototyping and production code.">
+        <title>Home - Baseguide</title>
+    <link rel="stylesheet" href="https://unpkg.com/baseguide@latest/dist/css/baseguide.min.css">
+    <link rel="stylesheet" href="/assets/drizzle/styles/drizzle.css">
+    <link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
+
+    <script>
+      WebFontConfig = {
+        google: {
+          families: ['Merriweather:900:latin']
+        }
+      };
+
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+  </head>
+  <body class="drizzle-Layout-body">
+    <div class="drizzle-Layout-nav drizzle-Nav" id="nav">
+      <div class="drizzle-Nav-header">
+        <a href="/" class="logo font-family-brand">
+          Baseguide
+        </a>
+        <a class="drizzle-Nav-header-toggle" href="#nav">
+          <svg height='40' width='30' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 30">
+            <path fill="#fff" d="M1,2C0.447,2,0,1.553,0,1l0,0c0-0.552,0.447-1,1-1l0,0h38.002C39.553,0,40,0.448,40,1l0,0c0,0.553-0.447,1-0.998,1l0,0H1L1,2z"></path>
+            <path fill="#fff" d="M1,16c-0.553,0-1-0.448-1-1l0,0c0-0.552,0.447-1,1-1l0,0h38.002C39.553,14,40,14.447,40,15l0,0c0,0.553-0.447,1-0.998,1l0,0H1L1,16z"></path>
+            <path fill="#fff" d="M1,30c-0.553,0-1-0.448-1-1.001l0,0c0-0.552,0.447-1,1-1l0,0h38.002c0.551,0,0.998,0.448,0.998,1l0,0C40,29.552,39.553,30,39.002,30l0,0H1L1,30z"></path>
+          </svg>
+        </a>
+      </div>
+    
+      <div class="drizzle-Nav-main" id="nav-menu">
+        <h5 class="drizzle-Nav-item drizzle-Nav-label">Base</h5>
+        <ul class="drizzle-Nav-menu">
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/base/content.html">Content</a>
+          </li>
+        </ul>
+    
+        <h5 class="drizzle-Nav-item drizzle-Nav-label">Objects</h5>
+        <ul class="drizzle-Nav-menu">
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/objects/embed.html">Embed</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/objects/grid.html">Grid</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/objects/list.html">List</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/objects/media.html">Media</a>
+          </li>
+        </ul>
+    
+        <h5 class="drizzle-Nav-item drizzle-Nav-label">Components</h5>
+        <ul class="drizzle-Nav-menu">
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/components/button.html">Button</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/components/form.html">Form</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/components/table.html">Table</a>
+          </li>
+        </ul>
+    
+        <h5 class="drizzle-Nav-item drizzle-Nav-label">Utilities</h5>
+        <ul class="drizzle-Nav-menu">
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/utilities/helpers.html">Helpers</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/utilities/visibility.html">Visibility</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/utilities/space.html">Space</a>
+          </li>
+          <li>
+            <a class="drizzle-Nav-item" href="/patterns/utilities/text.html">Text</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="drizzle-Layout-main drizzle-u-cf">
+      <div class="drizzle-u-pad drizzle-u-rhythm">
+<h1>Baseguide</h1>
+
+<div class="drizzle-Item drizzle-u-rhythm">
+  <p class="drizzle-u-textLarger">
+    Baseguide is a lightweight and robust CSS framework for prototyping and production code.
+  </p>
+
+  <div class="drizzle-u-inlineBlock">
+    <ul class="drizzle-Arrange drizzle-Arrange--withGutter">
+      <li class="drizzle-Arrange-sizeFit">
+        <a href="https://github.com/slavanga/baseguide/archive/master.zip" class="btn">Download</a>
+      </li>
+      <li class="drizzle-Arrange-sizeFit">
+        <a href="https://github.com/slavanga/baseguide" class="btn btn--outline">View on GitHub</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="drizzle-Item drizzle-u-rhythm">
+  <div class="row">
+    <div class="col col-md-4 space-xs space-sm text-center">
+      <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#F18F01" d="m30,28c0,1.104 -0.896,2 -2,2l-24,0c-1.104,0 -2,-0.896 -2,-2l0,-24c0,-1.104 0.896,-2 2,-2l24,0c1.104,0 2,0.896 2,2l0,24l0,0zm-2,-28l-24,0c-2.209,0 -4,1.79099 -4,4l0,24c0,2.20901 1.791,4 4,4l24,0c2.209,0 4,-1.79099 4,-4l0,-24c0,-2.20901 -1.791,-4 -4,-4l0,0zm-8,19.39999c-1.326,0 -2.39999,-1.07498 -2.39999,-2.39999c0,-1.32501 1.07399,-2.39999 2.39999,-2.39999c1.326,0 2.39999,1.07498 2.39999,2.39999c0,1.32501 -1.07399,2.39999 -2.39999,2.39999l0,0zm6,-3.39999l-2.142,0c-0.44501,-1.72299 -1.996,-3 -3.858,-3c-1.862,0 -3.412,1.27701 -3.858,3l-10.142,0c-0.552,0 -1,0.448 -1,1c0,0.55301 0.448,1 1,1l10.142,0c0.44501,1.72299 1.996,3 3.858,3c1.862,0 3.41299,-1.27701 3.858,-3l2.142,0c0.552,0 1,-0.44699 1,-1c0,-0.552 -0.448,-1 -1,-1l0,0zm-15,-4.60001c-1.326,0 -2.39999,-1.07498 -2.39999,-2.39999c0,-1.32501 1.07399,-2.39899 2.39999,-2.39899c1.326,0 2.39999,1.07397 2.39999,2.39899c0,1.32501 -1.07399,2.39999 -2.39999,2.39999l0,0zm15,-3.39999l-11.142,0c-0.44501,-1.72299 -1.996,-3 -3.858,-3c-1.862,0 -3.41299,1.27701 -3.858,3l-1.142,0c-0.552,0 -1,0.448 -1,1c0,0.55301 0.448,1 1,1l1.142,0c0.44501,1.72299 1.996,3 3.858,3c1.862,0 3.41299,-1.27701 3.858,-3l11.142,0c0.552,0 1,-0.44699 1,-1c0,-0.552 -0.448,-1 -1,-1l0,0zm-15,19.39999c-1.326,0 -2.39999,-1.07498 -2.39999,-2.39999c0,-1.32501 1.07399,-2.39899 2.39999,-2.39899c1.326,0 2.39999,1.07397 2.39999,2.39899c0,1.32501 -1.07399,2.39999 -2.39999,2.39999l0,0zm15,-3.39999l-11.142,0c-0.44501,-1.72198 -1.996,-3 -3.858,-3c-1.862,0 -3.41299,1.27802 -3.858,3l-1.142,0c-0.552,0 -1,0.44699 -1,1c0,0.55301 0.448,1 1,1l1.142,0c0.44501,1.72299 1.996,3 3.858,3c1.862,0 3.41299,-1.27701 3.858,-3l11.142,0c0.552,0 1,-0.44699 1,-1c0,-0.55301 -0.448,-1 -1,-1l0,0z">
+      </path></svg>
+
+      <h3 class="title-uppercase">Customizable</h3>
+      <p>Use Sass to make it your own.</p>
+    </div>
+    <div class="col col-md-4 space-xs space-sm text-center">
+      <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#EF476F" d="m24.972,6l-4.972,0c-0.552,0 -1,0.448 -1,1c0,0.55298 0.448,1 1,1l2.62801,0l-4.798,4.79901l1.414,1.414l4.778,-4.77802l-0.022,2.565c0,0.55298 0.448,1 1,1c0.552,0 1,-0.44702 1,-1l0,-5c0,-0.29602 -0.123,-0.53497 -0.31599,-0.69897c-0.18201,-0.18604 -0.433,-0.30103 -0.71201,-0.30103l0,0zm5.028,22c0,1.09998 -0.896,2 -2,2l-24,0c-1.104,0 -2,-0.90002 -2,-2l0,-24c0,-1.104 0.896,-2 2,-2l24,0c1.104,0 2,0.896 2,2l0,24l0,0zm-2,-28l-24,0c-2.209,0 -4,1.79102 -4,4l0,24c0,2.21002 1.791,4 4,4l24,0c2.209,0 4,-1.78998 4,-4l0,-24c0,-2.20898 -1.791,-4 -4,-4l0,0zm-15.244,17.78998l-4.778,4.78003l0.022,-2.57001c0,-0.54999 -0.448,-1 -1,-1c-0.552,0 -1,0.45001 -1,1l0,5c0,0.29999 0.123,0.53998 0.31599,0.70001c0.181,0.17999 0.433,0.29999 0.71201,0.29999l4.972,0c0.552,0 1,-0.45001 1,-1c0,-0.54999 -0.448,-1 -1,-1l-2.62801,0l4.798,-4.79999l-1.414,-1.41003l0,0zm12.244,1.21002c-0.552,0 -1,0.45001 -1,1l0.022,2.57001l-4.778,-4.78003l-1.414,1.41003l4.798,4.79999l-2.62801,0c-0.552,0 -1,0.45001 -1,1c0,0.54999 0.448,1 1,1l4.972,0c0.27901,0 0.53101,-0.12 0.71201,-0.29999c0.19299,-0.16003 0.31599,-0.40002 0.31599,-0.70001l0,-5c0,-0.54999 -0.448,-1 -1,-1l0,0zm-13,-11c0.552,0 1,-0.44702 1,-1c0,-0.552 -0.448,-1 -1,-1l-4.972,0c-0.27901,0 -0.53,0.11499 -0.71201,0.30103c-0.19299,0.164 -0.31599,0.40295 -0.31599,0.69897l0,5c0,0.55298 0.448,1 1,1c0.552,0 1,-0.44702 1,-1l-0.022,-2.565l4.778,4.77802l1.414,-1.414l-4.798,-4.79901l2.62801,0l0,0z">
+      </path></svg>
+
+      <h3 class="title-uppercase">Scalable</h3>
+      <p>Everything is relative.</p>
+    </div>
+    <div class="col col-md-4 text-center">
+      <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#88AB75" d="m22.027,9.06995c-0.479,-0.27991 -1.09,-0.10999 -1.366,0.36011l-6.395,11.07996l-3.578,-3.30005c-0.37801,-0.3999 -1.011,-0.41992 -1.414,-0.03992c-0.403,0.37 -0.424,1.01001 -0.04601,1.40991l4.57201,4.22009c0.377,0.3999 1.00999,0.41992 1.41299,0.03992c0.122,-0.10999 7.18,-12.40991 7.18,-12.40991c0.276,-0.47009 0.112,-1.09009 -0.366,-1.36011l0,0zm-6.027,20.93005c-7.732,0 -14,-6.27002 -14,-14c0,-7.72998 6.268,-14 14,-14c7.732,0 14,6.27002 14,14c0,7.72998 -6.268,14 -14,14l0,0zm0,-30c-8.836,0 -16,7.16003 -16,16c0,8.83997 7.164,16 16,16c8.836,0 16,-7.16003 16,-16c0,-8.83997 -7.164,-16 -16,-16l0,0z">
+      </path></svg>
+
+      <h3 class="title-uppercase">Compatible</h3>
+      <p>Tested in a wide range of browsers.</p>
+    </div>
+  </div>
+</div>
+
+        <footer class="footer">
+          <ul class="list-unstyled list-wrap text-center">
+              <li><a class="github-button" href="https://github.com/slavanga/baseguide/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" aria-label="Download slavanga/baseguide on GitHub">Download</a></li>
+              <li><a class="github-button" href="https://github.com/slavanga/baseguide/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue slavanga/baseguide on GitHub">Report a Bug</a></li>
+              <li><a class="github-button" href="https://github.com/slavanga/baseguide" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star slavanga/baseguide on GitHub">Star</a></li>
+          </ul>
+          <p class="small text-center text-muted">
+            Licensed under the <a href="https://github.com/slavanga/baseguide/blob/master/LICENSE">MIT License</a>.
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="/assets/drizzle/scripts/drizzle.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8765653-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-8765653-5', {
+        'anonymize_ip': true
+      });
+    </script>
+
+  </body>
+</html>

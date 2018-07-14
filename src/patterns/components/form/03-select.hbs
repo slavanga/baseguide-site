@@ -1,0 +1,11 @@
+---
+name: Select
+---
+<label for="example-select">Articles</label>
+<div class="select">
+  <select id="example-select">
+    {{#each (data "articles")}}
+      <option>{{title}}</option>
+    {{/each}}
+  </select>
+</div>

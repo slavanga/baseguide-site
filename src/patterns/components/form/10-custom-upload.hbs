@@ -1,0 +1,27 @@
+---
+name: Custom Upload
+notes: The Javascript snippet below depends on the file API (see link).
+links:
+  "File API Support": http://caniuse.com/#feat=fileapi
+---
+<label for="file-custom" id="js-filename" class="btn">Choose File</label>
+<input type="file" id="file-custom" class="sr-only" multiple>
+
+
+<script>
+  (function() {
+    var file = document.getElementById('file-custom');
+
+    file.addEventListener('change', function() {
+        var fileCount = file.files.length;
+
+        if (fileCount > 0) {
+          if (fileCount > 1) {
+            document.getElementById('js-filename').innerHTML = fileCount + ' files selected';
+          } else {
+            document.getElementById('js-filename').innerHTML = file.files[0].name;
+          }
+        }
+    });
+  }());
+</script>
